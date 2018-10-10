@@ -386,9 +386,9 @@ defmodule Elixlsx.XMLTemplates do
             <xdr:rowOff>#{image.x_offset}</xdr:rowOff>
         </xdr:from>
         <xdr:to>
-            <xdr:col>#{image.colidx + 1}</xdr:col>
+            <xdr:col>#{image.colidx + image.cols}</xdr:col>
             <xdr:colOff>#{image.x_offset}</xdr:colOff>
-            <xdr:row>#{image.rowidx + 1}</xdr:row>
+            <xdr:row>#{image.rowidx + image.rows}</xdr:row>
             <xdr:rowOff>#{image.x_offset}</xdr:rowOff>
         </xdr:to>
         <xdr:pic>
